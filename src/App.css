@@ -1,0 +1,63 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  padding: 15px;
+}
+.pokemon {
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #222224;
+  transition-duration: 0.2s;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+}
+.pokemon:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.pagination {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  padding: 0 15px;
+}
+
+.button {
+  border-radius: 8px;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #eee;
+  transition-duration: 0.2s;
+  color: #000;
+  text-align: center;
+  text-decoration: capitalize;
+}
+
+.button:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.page-number {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: aquamarine;
+}
+
+.button:disabled {
+  color: #999;
+}
+
+.button:disabled:hover {
+  background-color: #eee;
+  cursor: not-allowed;
+}
